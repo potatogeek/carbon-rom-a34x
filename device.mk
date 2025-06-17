@@ -8,9 +8,7 @@ DEVICE_PATH := device/samsung/a34x
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# API levels
-BOARD_API_LEVEL := 30
-PRODUCT_SHIPPING_API_LEVEL := 33
+
 
 # fastbootd
 PRODUCT_PACKAGES += \
