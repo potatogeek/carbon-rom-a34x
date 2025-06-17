@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+DEVICE_PATH := device/samsung/a34x
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -149,10 +150,6 @@ PRODUCT_SOONG_NAMESPACES += \
     # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 # fcm
