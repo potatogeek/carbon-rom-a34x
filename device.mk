@@ -15,7 +15,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
-
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-V3-ndk
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
