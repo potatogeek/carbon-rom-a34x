@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The Android Open Source Project
+# Copyright 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,10 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_a34x_xddeath69.mk \
-    $(LOCAL_DIR)/carbon_a34x.mk
+$(call inherit-product, device/google/a34x/aosp_a34x.mk)
+PRODUCT_NAME := aosp_a34x_xddeath69
 
-COMMON_LUNCH_CHOICES := \
-    carbon_a34x-userdebug
+# Add "hwaddress" as a global sanitizer if it's missing.
+ifeq ($(filter hwaddress,$(SANITIZE_TARGET)),)
+  SANITIZE_TARGET := $(strip $(SANITIZE_TARGET) hwaddress)
+endif
