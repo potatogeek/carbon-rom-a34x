@@ -148,6 +148,9 @@ PRODUCT_SOONG_NAMESPACES += \
     # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
+    # Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 # fcm
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/compatibility_matrix.xml  \
