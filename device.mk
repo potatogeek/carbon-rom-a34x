@@ -148,8 +148,6 @@ PRODUCT_SOONG_NAMESPACES += \
     # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 # fcm
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/compatibility_matrix.xml  \
