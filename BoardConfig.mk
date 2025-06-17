@@ -7,6 +7,7 @@
 DEVICE_PATH := device/samsung/a34x
 # build hack
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_DUP_SYSPROP := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
