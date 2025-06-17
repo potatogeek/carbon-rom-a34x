@@ -15,8 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_a34x_xddeath69.mk \
-    $(LOCAL_DIR)/carbon_a34x.mk
+    $(LOCAL_DIR)/lineage_a34x.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_a34x-userdebug
+    lineage_a34x-userdebug

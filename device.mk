@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/compatibility_matrix.xml  \
     hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
-    vendor/carbon/config/device_framework_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)

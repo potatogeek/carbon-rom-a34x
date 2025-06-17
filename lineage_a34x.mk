@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2025 The carbonOS Project
+# Copyright (C) 2025 The lineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -10,14 +10,14 @@ TARGET_SCREEN_WIDTH := 1080
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common carbon stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit from a34x device
 $(call inherit-product, device/samsung/a34x/device.mk)
 
 PRODUCT_DEVICE := a34x
-PRODUCT_NAME := carbon_a34x
+PRODUCT_NAME := lineage_a34x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A346M
 PRODUCT_MANUFACTURER := samsung
