@@ -16,6 +16,7 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 # Inherit from a34x device
 $(call inherit-product, device/samsung/a34x/device.mk)
 
+DISABLE_VINTF_COMPATIBILITY_CHECK=true 
 PRODUCT_DEVICE := a34x
 PRODUCT_NAME := carbon_a34x
 PRODUCT_BRAND := samsung
